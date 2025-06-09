@@ -1,0 +1,239 @@
+/* Reset et box‐sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corps de page */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Conteneur principal pour centrer le contenu */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* ==========================
+   HEADER & NAVIGATION
+   ========================== */
+header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+
+/* Liste de liens de navigation en flex */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+/* Chaque élément du menu */
+nav ul li {
+  margin-right: 20px;
+}
+
+/* Lien de navigation */
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+nav ul li a:hover {
+  opacity: 0.8;
+}
+
+/* Pour les très petits écrans, empiler verticalement */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 8px 0;
+  }
+}
+
+/* ==========================
+   TABLEAUX
+   ========================== */
+/* Conteneur pour permettre défilement horizontal si besoin */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Style global des tableaux */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+/* Entête de table */
+table thead th {
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Lignes de corps de table */
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Cellules */
+table th,
+table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+}
+
+/* Liens et boutons dans les cellules */
+table a {
+  color: #2980b9;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   FORMULAIRES & CHAMPS
+   ========================== */
+/* Conteneur générique pour les formulaires */
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Chaque étiquette (label) */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #34495e;
+}
+
+/* Champ texte, select, textarea */
+form input[type="text"],
+form input[type="password"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  transition: border 0.2s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+/* Boutons génériques */
+button,
+.button {
+  background-color: #2980b9;
+  color: #ecf0f1;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover,
+.button:hover {
+  background-color: #3498db;
+}
+
+/* Lien dans le formulaire pour revenir */
+form a {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+form a:hover {
+  color: #34495e;
+  text-decoration: underline;
+}
+
+/* ==========================
+   FLASH MESSAGES (ALERTES)
+   ========================== */
+.alert {
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.alert-error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+/* ==========================
+   PIED DE PAGE
+   ========================== */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* ==========================
+   CHARGEMENT MOBILE
+   ========================== */
+/* Ajuster les marges pour table sur petit écran */
+@media (max-width: 768px) {
+  .table-container {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,59 @@
+# Configuration files
+/config/database.php
+
+# Vendor directories
+/vendor/
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.project
+.settings/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Cache and temporary files
+/cache/
+/tmp/
+*.tmp
+*.temp
+
+# Session files
+/sessions/
+
+# Uploaded files and media
+/uploads/
+/media/
+
+# Environment specific files
+.env
+.env.local
+.env.*.local
+phpunit.xml.dist
+
+# Composer
+composer.phar
+/vendor/
+composer.lock
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
